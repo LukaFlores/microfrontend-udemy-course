@@ -11,7 +11,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|woff|svg|eoy|ttf)$/i,
+        test: /\.(png|jpe?g|gif|woff|svg|eot|ttf)$/i,
         use: [{ loader: 'file-loader' }],
       },
       {
@@ -19,7 +19,7 @@ module.exports = {
         use: 'vue-loader',
       },
       {
-        test: /\.scss|.css$/,
+        test: /\.scss|\.css$/,
         use: ['vue-style-loader', 'style-loader', 'css-loader', 'sass-loader'],
       },
       {
